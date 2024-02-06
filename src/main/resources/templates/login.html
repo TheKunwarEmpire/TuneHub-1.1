@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" th:href="@{/css/login.css}">
 </head>
+
 <body>
-	<h1>User Login:</h1>
-	<form action="validate" method="post">
-		<label>Email : </label>
-		<input type="email" name="email">
-		<br><br>
-		<label>Password : </label>
-		<input type="password" name="password">
-		<br><br>
-		<input type="submit" value="LOGIN">
-	</form>
+	<div class="form">
+		<h1>TuneHub</h1>
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn"
+				onclick="login()">Login</button>
+				<button type="button" class="toggle-btn"
+				onclick="register()">Register</button>
+			</div>
+			<form id="login" class="input-group" action="validate" method="post">
+				<input type="email" class="input-field" name="email" placeholder="Email" required>
+				<input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+				<input type="submit" class="submit-btn" value="LOGIN">
+			</form>
+			<form id="register" class="input-group" action="register" method="post">
+				<input type="text" class="input-field" name="username" placeholder="UserName" required>
+				<input type="email" class="input-field" name="email" placeholder="Email" required>
+				<br><br>
+				<input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+				<div class="input-radio">
+					<input type="radio" name="gender" value="Male">Male
+					<input type="radio" name="gender" value="Female">Female
+					<input type="radio" name="gender" value="Others">Others
+				</div>
+				<div class="input-radio">
+					<input type="radio" name="role" value="Admin">Admin
+					<input type="radio" name="role" value="Customer">Customer
+				</div>
+				<textarea name="address" class="input-field" rows="3" cols="50" placeholder="Address"
+					required></textarea>
+				<br><br>
+				<input type="submit" class="submit-btn" value="REGISTER">
+			</form>
+		</div>
+	</div>
+	
+
+	<script>
+		var x=document.getElementById("login");
+		var y=document.getElementById("register");
+		var z=document.getElementById("btn");
+
+		function register(){
+			x.style.left="-400px";
+			y.style.left="50px";
+			z.style.left="110px";
+		}
+		function login(){
+			x.style.left="50px";
+			y.style.left="450px";
+			z.style.left="0px";
+		}
+	</script>
+
 </body>
+
 </html>

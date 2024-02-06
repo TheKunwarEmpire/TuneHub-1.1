@@ -9,9 +9,9 @@ public class NavController {
 	public String login() {
 		return "login";
 	}
-	@GetMapping("/registration")
-	public String registration() {
-		return "registration";
+	@GetMapping("/index")
+	public String index() {
+		return "index";
 	}
 	@GetMapping("/newSong")
 	public String newSong() {

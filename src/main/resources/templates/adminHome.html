@@ -3,15 +3,25 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/adminHome.css}">
 </head>
 <body>
-	<a href="newSong">Add a new song</a>
-	<br>
-	<a href="viewSongs">View all songs</a>
-	<br>
-	<a href="createPlaylist">Create playlist</a>
-	<br>
-	<a href="viewPlaylists">View all playlists</a>
-	
+	<div class="container">
+        <a href="index" class="tuneHub">
+            <h1>TuneHub</h1>
+        </a>
+		<a href="newSong" class="option">
+			<div>Add a new song</div>
+		</a> 
+		<a href="viewSongs" class="option">
+			<div>View all songs</div>
+		</a> 
+		<a href="createPlaylist" class="option">
+			<div>Create playlist</div>
+		</a> 
+		<a href="viewPlaylists" class="option">
+			<div>View all playlists</div>
+		</a>
+	</div>
 </body>
 </html>

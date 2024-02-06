@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    border: 1px solid black;
+    margin: 115px;
+    border-radius: 13px;
+    padding: 20px 100px 20px;
+    box-shadow: 2px 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.content .input-field{
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    background: transparent;
+}
+.content .submit{
+    margin: 1px 133px;
+    padding: 3px;
+    cursor: pointer;
+}
+body{
+    background-color: antiquewhite;
+}

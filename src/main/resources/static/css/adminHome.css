@@ -1,0 +1,28 @@
+.option{
+    display: block;
+    border: 1px solid black;
+    padding: 52px 405px;
+    box-sizing: border-box;
+    margin: 9px auto;
+    width: 80%;
+}
+.container :hover{
+    background-color: rgb(159, 159, 161);
+}
+h1{
+	display: inline;
+    font-family: fantasy;
+}
+body{
+    background-color: antiquewhite;
+}
+.tuneHub{
+	text-decoration: none;
+	color: black;
+	margin: 2px auto;
+    display: block;
+    width: 5%;
+}
+li{
+    list-style: none;
+}

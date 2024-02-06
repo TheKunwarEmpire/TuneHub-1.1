@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-	<style>
-		
-	</style>
-</head>
-<body>
-	<button onclick="window.location.href='login'">LOGIN</button>
-	<button onclick="window.location.href='registration'">REGISTER</button>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <title>HomePage</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h1>TuneHub</h1>
+      <ul>
+        <li><button onclick="home()">Home</button></li>
+        <li><button onclick="aboutus()">About</button></li>
+        <li><button onclick="feature()">Feature</button></li>
+        <li><button onclick="contact()">Contact</button></li>
+      </ul>
+      <form class="login" action="login" method="get">
+        <button>Login</button>
+      </form>
+      <div class="page">
+        <content id="home" class="content">
+          <p class="heading">Online Music Streaming</p>
+          <p class="description">TuneHub is an online music platform where you can unleash the power of music listening.</p>
+        </content>
+        <content id="aboutus" class="content">
+          <p class="heading">About</p>
+          <p class="description">It is a web application build using Spring Tool Suit</p>
+        </content>
+        <content id="feature" class="content">
+          <p class="heading">Features</p>
+          <p class="description">Listen to the most fabulous songs and cheer up.</p>
+        </content>
+        <content id="contact" class="content">
+          <p class="heading">Contact</p>
+          <p class="description">Phone Number: 7050119844</p>
+          <p class="description">Email: kaushalcool50@gmail.com</p>
+        </content>
+      </div>
+    </div>
+    
+    <script>
+      var a = document.getElementById("home");
+      var b = document.getElementById("aboutus");
+      var c = document.getElementById("feature");
+      var d = document.getElementById("contact");
+      function home() {
+        a.style.left = "50px";
+        b.style.left = "450px";
+        c.style.left = "800px";
+        d.style.left = "1150px";
+      }
+      function aboutus() {
+        a.style.left = "-400px";
+        b.style.left = "50px";
+        c.style.left = "450px";
+        d.style.left = "750px";
+      }
+      function feature() {
+        a.style.left = "-800px";
+        b.style.left = "-450px";
+        c.style.left = "50px";
+        d.style.left = "550px";
+      }
+      function contact() {
+        a.style.left = "-1150px";
+        b.style.left = "-800px";
+        c.style.left = "-450px";
+        d.style.left = "50px";
+      }
+    </script>
+  </body>
 </html>
